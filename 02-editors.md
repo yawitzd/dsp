@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Emacs. This seems like a rabbit hole I don't want to go down. The best consensus I found is that Emacs has a shallow learning curve and is ultimately more customizable. But it seems like I should learn VIM sometime too. 
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Also Emacs, for consistency. I like textWrangler for other graphical editing (you can change the color of a string!) because I'm familiar with it. But I'm sure I'll revisit this. C-v to scroll down in Emacs. 
 
 ---
