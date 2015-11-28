@@ -134,6 +134,7 @@ Once you're done with the challenge, it's time to show your work in your remote 
 Your work should now show up in your remote repository.
 
 And you're done! (for now)  
+<I am! :pray: 11/28>
 
 You can also use this workflow to add images to your repository. All you need to do is add them to the _img_ folder, and they will be added to the staging area.   
 
