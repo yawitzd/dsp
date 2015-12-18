@@ -12,7 +12,22 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+  1. Order! 
+        Lists are ordered
+        Tuples are unordered
+  2. Structure
+        Lists are ordered, but every value means the same thing.
+            hours = [12.00, 1.00, 2,00, 3.00, 4.00]
+        Tuples are unordered, but values have semantic meaning. 
+            datetime.tuple = ["Jan", 13, 2016, 2, 45]
+  3. Editing
+        Tuples are immutable. Once values have been created, they can't be edited or replaced.
+        Lists can be changed.
+        Both can be sliced, edited, concatenated. 
+        Since tuples are immutable they CAN be used as dictionary keys.
+  4. Size
+        A tuple is slightly fewer bits than a list. 
 
 ---
 
@@ -20,7 +35,11 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+  A set is an unordered collection with no duplicates (e.g. a set of user IDs)
+    set('abracadabra') #gives the unique letters in that string
+  A list is an ordered collection that can contain duplicated (e.g. days of the week in August)
+    list('abracadabra') #gives the letters in that string, in order
 
 ---
 
@@ -28,7 +47,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+Lambda is a shorthand for creating functions. Eg:
+  lambda sorted: key
+
+Is the same as:
+  def name(sorted):
+      return key
 
 ---
 
