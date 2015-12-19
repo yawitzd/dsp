@@ -49,7 +49,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> 
 Lambda is a shorthand for creating functions. Eg:
-  lambda sorted: key
+  name = lambda sorted: key
 
 Is the same as:
   def name(sorted):
