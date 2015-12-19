@@ -22,9 +22,9 @@ How are Python lists and tuples similar and different? Which will work as keys i
         Tuples are unordered, but values have semantic meaning. 
             datetime.tuple = ["Jan", 13, 2016, 2, 45]
   3. Editing
-        Tuples are immutable. Once values have been created, they can't be edited or replaced.
+        Tuples are immutable. Once tuple values have been created, they cannot be edited or replaced.
         Lists can be changed.
-        Both can be sliced, edited, concatenated. 
+        Both lists and tuples can be sliced, edited, concatenated. 
         Since tuples are immutable they CAN be used as dictionary keys.
   4. Size
         A tuple is slightly fewer bits than a list. 
