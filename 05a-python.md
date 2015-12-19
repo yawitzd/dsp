@@ -87,7 +87,11 @@ def vowel_list(t)
           v.append(s)
   return v
 
-Sets are unordered collections of unique elemetns. We can also run set comprehensions to collect sets of values from sequences. Sets are enclosed in curly braces: {}
+Sets are unordered collections of unique elemetns. We can also run set comprehensions to collect sets of values from sequences. Sets are enclosed in curly braces: {} and we can operate on them using these functions: https://docs.python.org/2/library/sets.html . For example, this takes two sets (girls and boys), then exports their union, 'supergroup'
+girls = {'Michelle', 'Kelly', 'Beyonce'}
+boys = {'Justin', 'Lance', 'Joey'}
+
+Dictionary comprehensions export dictionaries of chosen elements from a sequence. 
 
 ---
 
