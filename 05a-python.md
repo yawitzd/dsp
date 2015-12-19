@@ -68,18 +68,18 @@ def sqlist():
         sqs.append((i+1)**2)
     return sqs
     
-"Map" is another way to export a list comprehension. "Map" is a processing pattern that traverses a sequence and performs an operation on each element. For example, this funcion takes a string and capitalizes every letter:
+>>"Map" is another way to export a list comprehension. "Map" is a processing pattern that traverses a sequence and performs an operation on each element. For example, this funcion takes a string and capitalizes every letter:
 
-def capitalize_all(t):
+>>def capitalize_all(t):
     '''from Dowley, p91'''
     res = []
     for s in t:
         res.append(s.capitalize())
     return s
     
-"Filter" can also give list comprehensions; "filter" takes some elements sequence and exports a list of those elements. For example, this function exports a list of all the vowels in the string, in order. 
+>>"Filter" can also give list comprehensions; "filter" takes some elements sequence and exports a list of those elements. For example, this function exports a list of all the vowels in the string, in order. 
 
-def vowel_list(t)
+>>def vowel_list(t)
   vowels = ['a','e','i','o','u']
   v = []
   for s in t:
@@ -87,11 +87,22 @@ def vowel_list(t)
           v.append(s)
   return v
 
-Sets are unordered collections of unique elemetns. We can also run set comprehensions to collect sets of values from sequences. Sets are enclosed in curly braces: {} and we can operate on them using these functions: https://docs.python.org/2/library/sets.html . For example, this takes two sets (girls and boys), then exports their union, 'supergroup'
-girls = {'Michelle', 'Kelly', 'Beyonce'}
-boys = {'Justin', 'Lance', 'Joey'}
+>>Sets are unordered collections of unique elemetns. We can also run set comprehensions to collect sets of values from sequences. Sets are enclosed in curly braces: {} and we can operate on them using these functions: https://docs.python.org/2/library/sets.html . For example, this takes two sets (girls and boys), then exports their union, 'supergroup'
+>>girls = {'Michelle', 'Kelly', 'Beyonce'}
+>>boys = {'Justin', 'Lance', 'Joey'}
+>>supergroup = girls | boys
 
-Dictionary comprehensions export dictionaries of chosen elements from a sequence. 
+>>Dictionary comprehensions export dictionaries of chosen elements from a sequence. 
+state_capitals = {'New York':'Albany', 'New Jersey':'Trenton', 'Montana':'Helena'}
+def only_nstates(d):
+    n = dict()
+    for key in d:
+        if key[0] == 'N':
+            n[key] = d[key]
+    return n
+only_nstates(state_capitals)
+    
+
 
 ---
 
