@@ -36,10 +36,10 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> 
-  A set is an unordered collection with no duplicates (e.g. a set of user IDs)
-    set('abracadabra') #gives the unique letters in that string
-  A list is an ordered collection that can contain duplicated (e.g. days of the week in August)
-    list('abracadabra') #gives the letters in that string, in order
+ A set is an unordered collection with no duplicates (e.g. a set of user IDs)
+  set('abracadabra') #gives the unique letters in that string
+ A list is an ordered collection that can contain duplicated (e.g. days of the week in August)
+  list('abracadabra') #gives the letters in that string, in order
 
 ---
 
@@ -61,7 +61,33 @@ Is the same as:
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are lists that are exported from functions. For example, this function returns a list of the first 10 square numbers:
+def sqlist():
+    sqs = []
+    for i in range(10):
+        sqs.append((i+1)**2)
+    return sqs
+    
+"Map" is another way to export a list comprehension. "Map" is a processing pattern that traverses a sequence and performs an operation on each element. For example, this funcion takes a string and capitalizes every letter:
+
+def capitalize_all(t):
+    '''from Dowley, p91'''
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+    return s
+    
+"Filter" can also give list comprehensions; "filter" takes some elements sequence and exports a list of those elements. For example, this function exports a list of all the vowels in the string, in order. 
+
+def vowel_list(t)
+  vowels = ['a','e','i','o','u']
+  v = []
+  for s in t:
+      if s in vowels:
+          v.append(s)
+  return v
+
+Sets are unordered collections of unique elemetns. We can also run set comprehensions to collect sets of values from sequences. Sets are enclosed in curly braces: {}
 
 ---
 
