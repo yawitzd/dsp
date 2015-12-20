@@ -10,10 +10,36 @@
 import csv
 
   def read_data(data):
-   # COMPLETE THIS FUNCTION
+    '''Returns 'fbd', a list of lists'''
+    fb = open('football.csv')
+    csv_fb = csv.reader(fb)
+    fbd = [] 
+    for row in csv_fb:
+      fbd.append(row) 
+    fb.close()
+    return fbd
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+  def add_score_difference(parsed_data):
+    '''Adds a column to the data for score difference'''
+    d = parsed_data
+    for i in range(len(d)):
+      if i == 0:
+        d[i].append('Score Difference')
+      else:
+        d[i].append(int(d[i][5]) - int(d[i][6]))
+    return d
+    
+  
+  def get_min_team(parsed_data):
+    d = add_score_difference(parsed_data)
+    diffs = []
+    teams = []
+    for row in d:
+      if d.index(row) > 0:
+        diffs.append(row[8])
+        teams.append(row[0])
+    i = diffs.index(min(diffs))
+    return teams[i]
+    
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+      
