@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print 'Number of donuts: many'
+    else:
+        print "Number of donuts: ', str(count)
 
 
 def both_ends(s):
@@ -37,7 +40,15 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ''
+    else:
+        start = s[0:1]
+        end = s[-2] + s[-1]
+        both = start + end
+        return both
+
+        
 
 
 def fix_start(s):
@@ -56,7 +67,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    n = s
+    char = n[0]
+    for i in range(len(n)):
+        if i > 0:
+            if n[i] == char:
+                n[i] = *
+    return n
 
 
 def mix_up(a, b):
@@ -74,7 +91,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    c = a
+    d = b
+    c[0] = b[0]
+    d[0] = a[0]
+    return str(a+" "+b)
 
 
 def verbing(s):
@@ -91,7 +112,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3:
+        if s[-3:] == 'ing':
+            return str(s+'ly') 
+        else:
+            return str(s+'ing')
+    else:
+        return s
 
 
 def not_bad(s):
@@ -111,7 +138,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if ' bad' in s:
+        if ' not ' in s:
+            if s.index(' not ') < s.index(' bad'):
+                start = s[0:s.index(' not ')]
+                end = s[s.index(' bad')+4:]
+                return str(start+' good'+end)
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +164,20 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a)%2 == 0:
+        a_split = a//2
+    else:
+        a_split == a//2 + 1
+        
+    if len(b)%2 == 0:
+        b_split = b//2
+    else:
+        bsplit == b//2 + 1
+   
+    a_front = a[0:a_split]
+    a_back = a[a_split+1:]
+    b_front = b[0:b_split]
+    b_back = b[b_split+1:]
+    
+    return a_front + b_front + a_back + b_back
+    
