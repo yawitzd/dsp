@@ -13,7 +13,9 @@ def get_extradays(start, stop):
 
 def get_timediff(y1, y2, m1, m2, d1, d2):
   year_diff = y2 - y1
-  year_days = year_diff * 365
+  #leap_days = do something
+  year_days = year_diff * 365 # + leap days
+  
 
   month_diff = abs(m2 - m1)
   extra = get_extradays(m1, m2)
