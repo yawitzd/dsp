@@ -89,11 +89,11 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> {('Russell', 'Shinohara'): ['0', 'Assistant Professor of Biostatistics', 'rshi@mail.med.upenn.edu'], ('Rebecca', 'Hubbard'): [' PhD', 'Associate Professor of Biostatistics', 'rhubb@mail.med.upenn.edu'], ('Haochang', 'Shou'): [' Ph.D.', 'Assistant Professor of Biostatistics', 'hshou@mail.med.upenn.edu']}
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> {('Shaw', 'Pamela'): [' PhD', 'Assistant Professor of Biostatistics', 'shawp@upenn.edu'], ('Troxel', 'Andrea'): [' ScD', 'Professor of Biostatistics', 'atroxel@mail.med.upenn.edu'], ('Shou', 'Haochang'): [' Ph.D.', 'Assistant Professor of Biostatistics', 'hshou@mail.med.upenn.edu']}
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
