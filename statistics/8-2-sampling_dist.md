@@ -17,7 +17,7 @@ a plot of standard error versus n.
 
     standard error 0.8143051321760896
     confidence interval (1.2833947662803724, 3.6030555525510546)
-    <img src=>
+    <img src="https://github.com/yawitzd/dsp/blob/master/img/chap08ci.png" title="scatter hex" style="float: left"; />
 
 2) As sample size increases:
 
