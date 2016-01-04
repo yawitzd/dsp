@@ -3,10 +3,10 @@
 7-1: Use data from the NSFG to: 
 
 1) Make a scatter plot showing birth weight vs. mother's age. 
-[<img src="http://www.github.com/yawitzd/dsp/blob/master/img/chap07hexbin.png" title="scatter hex" style="float: left"; />]
+[<img src="https://github.com/yawitzd/dsp/blob/master/img/chap07hexbin.png" title="scatter hex" style="float: left"; />]
 
 2) Plot percentiles of birth weight versus mother's age. 
-[<img src="http://www.github.com/yawitzd/dsp/blob/master/img/chap07scatter3.png" title="scatter 3" style="float: left"; />]
+[<img src="https://github.com/yawitzd/dsp/blob/master/img/chap07scatter3.png" title="scatter 3" style="float: left"; />]
 
 3) Compute Pearson's and Spearman's correlations. 
 
