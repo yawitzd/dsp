@@ -1,6 +1,6 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
->> Exercise 8.2
+Exercise 8.2
 
 Suppose you draw a sample with size n=10 from a population 
 with an exponential disrtribution with lamda=2.  Simulate
@@ -19,6 +19,7 @@ a plot of standard error versus n.
     confidence interval (1.2833947662803724, 3.6030555525510546)
     
 <img src="https://github.com/yawitzd/dsp/blob/master/img/chap08ci.png" title="scatter hex" style="float: left"; />
+
 2) As sample size increases:
 
     n        SE       90% ci
