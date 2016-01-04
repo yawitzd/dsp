@@ -22,4 +22,7 @@ type(dist)
 low = dist.cdf(177.8) #5'10
 high = dist.cdf(185.42) #6'1
 low, high, high-low
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes

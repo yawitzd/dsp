@@ -55,4 +55,7 @@ mean1 = pmf.Mean()
 mean2 = biased_pmf.Mean()
 diff = mean1 - mean2
 print("Actual pmf - biased pmf = \n", mean1, "-", mean2, "=", diff)
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes

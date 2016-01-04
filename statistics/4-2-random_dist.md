@@ -18,4 +18,7 @@ rd_cdf = thinkstats2.Cdf(rds, label='randos')
 thinkplot.PrePlot(1)
 thinkplot.Cdfs([rd_cdf])
 thinkplot.Show()
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
